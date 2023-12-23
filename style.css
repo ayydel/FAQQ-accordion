@@ -28,7 +28,7 @@ body {
     font-family: var(--work-sans);
     font-size: var(--default-size);
 
-    background-image: url('assets/images/background-pattern-desktop.svg');
+    background-image: url('images/background-pattern-desktop.svg');
     background-repeat: no-repeat;
     
     display: flex;
@@ -99,4 +99,18 @@ main {
 
 .attribution a { 
     color: hsl(228, 45%, 44%);
+ }
+
+ @media only screen and (max-width: 375px) {
+    body {
+        padding: 0 20px;
+        background: url('images/background-pattern-mobile.svg');
+        background-repeat: no-repeat;
+    } 
+    main {
+        padding: 25px;
+    }
+    main h1 {
+        font-size: 2rem;
+    }
  }
