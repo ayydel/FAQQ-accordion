@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* TYPOGRAPHY */
+    --work-sans: "Work Sans", Arial, sans-serif;
+    --font-wght-regular: 400;
+    --font-wght-sbold: 600;
+    --font-wght-bold: 700;
+    --default-size: 16px;
+
+    /* COLORS */
+    --color-white: hsl(0, 0%, 100%);
+    --light-pink:  hsl(275, 100%, 97%);
+    --grayish-purple: hsl(292, 16%, 49%);
+    --dark-purple: hsl(292, 42%, 14%);
+
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: var(--work-sans);
+    font-size: var(--default-size);
+
+    background-image: url('assets/images/background-pattern-desktop.svg');
+    background-repeat: no-repeat;
+    
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    justify-content: center;
+}
+
+main h1 {
+    font-size: 3rem;
+}
+
+main h3 {
+    color: var(--dark-purple);
+}
+
+main p {
+    color: var(--grayish-purple);
+}
+
+.accordion p {
+    padding-top: 20px; 
+}
+
+main {
+    margin: 0 auto;
+    padding: 30px;  
+    border-radius: 15px;
+    max-width: 600px;
+    background-color: var(--color-white);
+    box-shadow: -2px -2px 40px -10px var(--dark-purple), -2px -2px 20px -10px var(--light-pink);
+}
+
+.accordion svg:hover {
+    cursor: pointer ;
+}
+
+#icon-minus2, #icon-minus3, #icon-minus4, #icon-plus1 {
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.accordion {
+    padding: 20px 0;
+    border-bottom: 1px solid var(--light-pink);
+}
+
+.flex-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.attribution {
+    font-size: 11px; text-align: center; 
+    position: fixed;
+    bottom: 0;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+ }
